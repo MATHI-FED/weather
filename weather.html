@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .weather {
+      background-color: rgb(244, 244, 244);
+      border-radius: 10px;
+      padding:30px;
+    }
+   .temperature {
+      font-size: 50px;
+      font-weight: bold;
+    }
+   .forecast {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      
+    }
+    .day {
+      text-align:center;
+    }
+   .icon {
+      font-size: 25px;
+    }
+    .temperature sup {
+      font-weight: lighter;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 38px;
+    }
+    .days {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+  </style>
+  
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="weather">
+          <h3>New York, NY</h3>
+          <p>Tuesday, April 15th</p>
+          <p>Overcast</p>
+          <div class="temperature">
+            <span>58°<sup>f</sup></span>
+            <i class="fa-solid fa-temperature-high"></i>   
+          </div>
+          <div class="row text-end">
+            <div class="col-8 text-end">
+              <p>100% : Precipitation</p>
+              <p>97% : Humidity</p>
+              <p>4 mph SW : Wind</p>
+              <p>36 : pollen count</p>
+            </div>
+            
+          </div>
+    
+          
+          <div class="forecast row">
+            <div class="col day">
+              <div class="icon"><i class="fa-solid fa-cloud-bolt"></i></div>
+              <p class="days">Today</p>
+              <p>68<sup>o</sup> 36<sup>o</sup></p>
+              <p>Pollen: 36</p>
+            </div>
+            <div class="col day">
+              <div class="icon"><i class="fa-solid fa-sun"></i></div>
+              <p class="days">Wednesday</p>
+              <p>50<sup>o</sup> 39<sup>o</sup></p>
+              <p>Pollen: 36</p>
+            </div>
+            <div class="col day">
+              <div class="icon"><i class="fa-solid fa-sun"></i></div>
+              <p class="days">Thursday</p>
+              <p>55<sup>o</sup> 39<sup>o</sup></p>
+              <p>Pollen: 36</p>
+            </div>
+            <div class="col day">
+              <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div>
+              <p class="days">Friday</p>
+              <p>54<sup>o</sup> 43<sup>o</sup></p>
+              <p>Pollen: 36</p>
+            </div>
+            <div class="col day">
+              <div class="icon"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
+              <p class="days">Saturday</p>
+              <p>64<sup>o</sup> 46<sup>o</sup></p>
+              <p>Pollen: 36</p>
+            </div>
+            <div class="col day">
+                <div class="icon"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
+                <p class="days">Sunday</p>
+                <p>64<sup>o</sup> 50<sup>o</sup></p>
+                <p>Pollen: 36</p>
+              </div>
+              <div class="col day">
+                <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div>
+                <p class="days">Monday</p>
+                <p>61<sup>o</sup> 50<sup>o</sup></p>
+                <p>Pollen: 26</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
+        <script src="https://kit.fontawesome.com/8ca8f558fa.js" crossorigin="anonymous"></script> 
+</body>
+</html>
